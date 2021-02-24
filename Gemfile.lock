@@ -9,6 +9,8 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    ast (2.4.2)
+    backports (3.20.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -84,6 +86,7 @@ GEM
       octokit (~> 4.0)
       public_suffix (>= 2.0.2, < 5.0)
       typhoeus (~> 1.3)
+    hike (1.2.3)
     html-pipeline (2.14.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
@@ -103,6 +106,10 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-admin (0.11.0)
+      jekyll (>= 3.7, < 5.0)
+      sinatra (~> 1.4)
+      sinatra-contrib (~> 1.4)
     jekyll-avatar (0.7.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-coffeescript (1.1.1)
@@ -127,6 +134,8 @@ GEM
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
+    jekyll-opal (0.3.0)
+      opal (~> 0.8)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
@@ -210,16 +219,29 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.4)
+    multi_json (1.15.0)
     multipart-post (2.1.1)
     nokogiri (1.11.1-x64-mingw32)
       racc (~> 1.4)
     octokit (4.20.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
+    opal (0.11.4)
+      ast (>= 2.3.0)
+      hike (~> 1.2)
+      parser (= 2.3.3.1)
+      sourcemap (~> 0.1.0)
+    parser (2.3.3.1)
+      ast (~> 2.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
     racc (1.5.2)
+    rack (1.6.13)
+    rack-protection (1.5.5)
+      rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -240,9 +262,22 @@ GEM
       faraday (> 0.8, < 2.0)
     simpleidn (0.2.1)
       unf (~> 0.1.4)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-contrib (1.4.7)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (>= 1.3, < 3)
+    sourcemap (0.1.1)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
+    tilt (2.0.10)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
     tzinfo (1.2.9)
@@ -254,6 +289,7 @@ GEM
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
     wdm (0.1.1)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -261,12 +297,16 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 212)
+  jekyll-admin
   jekyll-feed (~> 0.12)
+  jekyll-github-metadata
+  jekyll-opal
   jekyll-theme-hacker (~> 0.1.2)
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.2.11
