@@ -22,10 +22,10 @@ title: tuthvn - Việt Nam Con Rồng Cháu Tiên
 email: tuth.vn@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My whole life is free
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://tuth.work" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: TuTranHoang
+github_username:  tuthvn
 
 # Build settings
 theme: minima
