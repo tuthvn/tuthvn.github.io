@@ -28,7 +28,7 @@ twitter_username: TuTranHoang
 github_username:  tuthvn
 
 # Build settings
-theme: minima
+theme: jekyll-theme-time-machine
 plugins:
   - jekyll-feed
   - jekyll-sitemap
