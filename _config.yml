@@ -30,11 +30,11 @@ twitter_username: TuTranHoang
 github_username:  tuthvn
 jekyll_admin:
   hidden_links:
-    - posts
+    # - posts
     # - pages
     # - staticfiles
-    - datafiles
-    - configuration
+    # - datafiles
+    # - configuration
   homepage: "pages"
 collections:
   posts:
