@@ -31,8 +31,8 @@ github_username:  tuthvn
 jekyll_admin:
   hidden_links:
     - posts
-    - pages
-    - staticfiles
+    # - pages
+    # - staticfiles
     - datafiles
     - configuration
   homepage: "pages"
