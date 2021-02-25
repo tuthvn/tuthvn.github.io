@@ -12,6 +12,7 @@ source "https://rubygems.org"
 gem "minima", "~> 2.5"
 gem 'jekyll-theme-hacker', '~> 0.1.2'
 gem 'jekyll-opal'
+gem "rack", "~> 1.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", "~> 212", group: :jekyll_plugins
